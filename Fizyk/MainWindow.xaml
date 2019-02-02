@@ -1,0 +1,24 @@
+﻿<Window x:Class="Fizyk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fizyk" Height="289" Width="436" Background="#FFF9F48C">
+    <Grid HorizontalAlignment="Left" Width="413" Margin="0,0,0,21">
+        <Button x:Name="B1" Content="Prawo Ohma" HorizontalAlignment="Left" Height="23" Margin="221,192,0,0" VerticalAlignment="Top" Width="173" RenderTransformOrigin="0.009,-0.28" Click="B1_Click" FontSize="14"/>
+        <Button x:Name="B2" Content="Oblicz przyspieszenie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" RenderTransformOrigin="0.454,0.418" Margin="11,114,0,0" FontSize="14" Height="23" Click="B2_Click"/>
+        <Button Content="Oblicz średnią prędkość" HorizontalAlignment="Left" Margin="11,192,0,0" VerticalAlignment="Top" Width="175" FontSize="14" RenderTransformOrigin="0.5,0.5" Height="23" Click="Button_Click"/>
+        <Button x:Name="B4" Content="Siła ciężkości" HorizontalAlignment="Left" Margin="221,114,0,0" VerticalAlignment="Top" Width="175" FontSize="14" Height="23" Click="B4_Click"/>
+        <Label Content="Wybierz wzór" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Height="31" Width="140" RenderTransformOrigin="0.301,0.548"/>
+        <Label Content="Kinematyka:" HorizontalAlignment="Left" Margin="11,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.113,-0.157" Width="175" FontSize="14" Height="29"/>
+        <Label Content="Elektryczność:" HorizontalAlignment="Left" Margin="221,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" FontSize="14" Height="29">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.932"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Grawitacja:" HorizontalAlignment="Left" Margin="221,63,0,0" VerticalAlignment="Top" Width="156" FontSize="14"/>
+    </Grid>
+</Window>

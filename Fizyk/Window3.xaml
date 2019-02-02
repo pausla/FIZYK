@@ -1,0 +1,37 @@
+﻿<Window x:Class="Fizyk.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Prędkość" Height="323.03" Width="513.771" ResizeMode="NoResize" Background="#FFFDCECE">
+    <Grid Margin="0,0,15,0" RenderTransformOrigin="0.584,0.497">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Podaj drogę i czas, aby obliczyć średnią prędkość " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,10,0,0" Width="339" FontSize="14" Grid.Column="1" Height="29" FontWeight="Bold"/>
+        <Button Grid.ColumnSpan="2" Content="Wynik" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Margin="41,225,0,0" FontSize="16" Click="Button_Click"/>
+        <TextBox x:Name="TXB1_W3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,79,0,0"/>
+        <TextBox x:Name="TXB2_W3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="28,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.ColumnSpan="2" Content="Podaj drogę" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,73,0,0" FontSize="14"/>
+        <Label Grid.ColumnSpan="2" Content="Podaj czas" HorizontalAlignment="Left" Margin="187,133,0,0" VerticalAlignment="Top" FontSize="14" Width="105"/>
+        <ComboBox x:Name="CBX1_W3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="315,225,0,0" VerticalAlignment="Top" Width="150">
+            <ComboBoxItem>km/h</ComboBoxItem>
+            <ComboBoxItem>m/s</ComboBoxItem>
+            <ComboBoxItem>cm/min</ComboBoxItem>
+            <ComboBoxItem>mm/ms</ComboBoxItem>
+        </ComboBox>
+        <Label Grid.ColumnSpan="2" Content="Wybierz jednostkę wyniku:" HorizontalAlignment="Left" Margin="315,182,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Wynik_W3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="172,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <ComboBox x:Name="CBX_droga" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="315,80,0,0" VerticalAlignment="Top" Width="150">
+            <ComboBoxItem>mm</ComboBoxItem>
+            <ComboBoxItem>cm</ComboBoxItem>
+            <ComboBoxItem>m</ComboBoxItem>
+            <ComboBoxItem>km</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="CBX_czas" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="315,140,0,0" VerticalAlignment="Top" Width="150">
+            <ComboBoxItem>ms</ComboBoxItem>
+            <ComboBoxItem>s</ComboBoxItem>
+            <ComboBoxItem>min</ComboBoxItem>
+            <ComboBoxItem>h</ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>
